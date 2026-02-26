@@ -4,14 +4,14 @@
             3) Insufficient text inputs for calculating the average of three numbers (Logical / Runtime)
 */
 function avg(){
-  let g1 = parseInt(documnet.getElementById("Grade1"));
-  let g2 = parseInt(documnet.getElementById("Grade2"));
-  let output = document.getElement("output");
+  let g1 = parseInt(document.getElementById("g1").value);
+  let g2 = parseInt(document.getElementById("g2").value);
+  let output = document.getElementById("results");
 
-  let a = g1 + g2 / 3;
+  let a = (g1 + g2) / 2;
 
-  output.innerHTML = 'Average is ${a}';
-
+  output.innerHTML = "Average is" + a;
+}
 /* Note: There are three errors in the above code that can only be handled in JS.
              1) Missing .value attribute in order to retrieve the information from the text inputs (Runtime)
              2) Incorrect function reference to get an element by its id (Syntax)
